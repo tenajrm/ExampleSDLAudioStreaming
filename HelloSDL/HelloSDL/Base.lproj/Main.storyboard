@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DefaultViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oOo-c6-R9r">
+                                <rect key="frame" x="180" y="67" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Fqr-AL-qtc"/>
+                                    <constraint firstAttribute="width" secondItem="oOo-c6-R9r" secondAttribute="height" multiplier="15:8" id="YXW-t3-4pE"/>
+                                    <constraint firstAttribute="height" constant="128" id="uj6-Lc-ccb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlocked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-R1-KlX">
+                                <rect key="frame" x="264" y="289" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oOo-c6-R9r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MmR-36-31K"/>
+                            <constraint firstItem="M1X-R1-KlX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hNe-S1-WS9"/>
+                            <constraint firstItem="M1X-R1-KlX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nsf-w3-rNT"/>
+                            <constraint firstItem="oOo-c6-R9r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="v38-JD-UcX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="389"/>
+        </scene>
+        <!--Lock Screen View Controller-->
+        <scene sceneID="bul-O3-l4g">
+            <objects>
+                <viewController storyboardIdentifier="LockScreenViewController" id="JuC-D0-xjA" customClass="LockScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kxN-qr-FEx"/>
+                        <viewControllerLayoutGuide type="bottom" id="PFd-lo-yBN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9kI-Dw-iP6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ford_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="pUv-yZ-yga">
+                                <rect key="frame" x="180" y="67" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pUv-yZ-yga" secondAttribute="height" multiplier="15:8" id="4cG-15-tnl"/>
+                                    <constraint firstAttribute="width" constant="240" id="a6V-0R-e6L"/>
+                                    <constraint firstAttribute="height" constant="128" id="szj-c8-8kR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ3-BF-6eZ">
+                                <rect key="frame" x="272" y="289" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pUv-yZ-yga" firstAttribute="centerX" secondItem="9kI-Dw-iP6" secondAttribute="centerX" id="JSX-PH-jdT"/>
+                            <constraint firstItem="pUv-yZ-yga" firstAttribute="top" secondItem="kxN-qr-FEx" secondAttribute="bottom" constant="47" id="cQV-GI-0fG"/>
+                            <constraint firstItem="BQ3-BF-6eZ" firstAttribute="centerY" secondItem="9kI-Dw-iP6" secondAttribute="centerY" id="hUg-Vz-ZDi"/>
+                            <constraint firstItem="BQ3-BF-6eZ" firstAttribute="centerX" secondItem="9kI-Dw-iP6" secondAttribute="centerX" id="n1W-Hx-3Nw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbg-YZ-CU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ford_Logo" width="1280" height="512"/>
+    </resources>
+</document>
