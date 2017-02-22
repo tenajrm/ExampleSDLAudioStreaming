@@ -1,4 +1,4 @@
-# Hello SDL
+# SDLAudioStream
 This XCode project acts as a reference iOS app using the 4.0.0 SDL SDK.
 
 ## Installing
@@ -8,7 +8,7 @@ This XCode project acts as a reference iOS app using the 4.0.0 SDL SDK.
 
 2) Clone this repo:
 
-* git clone https://github.com/smartdevicelink/hello_sdl_ios
+* git clone https://github.com/tenajrm/SDLAudioStream/
 
 3) At the command line, change to the directory where the sample project is located and run the following command to download the SDL SDK and to setup your XCode workspace:
 
@@ -17,3 +17,5 @@ This XCode project acts as a reference iOS app using the 4.0.0 SDL SDK.
 4) Open the workspace "HelloSDL.xcworkspace" in XCode
 
 5) Edit the AppName, AppID, and the other app settings in the “HSDLProxyManager” class
+
+This project was based on https://github.com/smartdevicelink/hello_sdl_ios and was modifyed to play Autio Stream for testing propusals
